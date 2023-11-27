@@ -127,7 +127,8 @@ Telegram supporta i messaggi inviati con **MarkDown**, un modo semplice di forma
 la data di fine in grassetto come esempio.
 Nella versione Telegram di Markdown, delimiteremo il testo che vogliamo in grassetto con degli asterischi,
 cosicché il messaggio dovrebbe apparire così:  
->CodeDay ends \*in 2 months\*!  \
+>CodeDay ends \*in 2 months\*!  
+
 Per implementare questo è piuttosto facile: tutto quello che dobbiamo fare è delimitare la data di fine con  
 degli asterischi e trasmettere il parametro “parse_mode” al Telegram API e impostarlo su “Markdown”,
 questo indicherà alla lib Telegram che vogliamo il testo come MarkDown.  
