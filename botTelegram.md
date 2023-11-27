@@ -122,7 +122,16 @@ UNIX.
 – Usiamo la funzione `fromNow` di `moment` per ottenere il tempo relativo alla data “endsAt” e poi inviamo  
 tutto attraverso le API di Telegram.  
 
-
+## Step 6: Markdown  
+Telegram supporta i messaggi inviati con **MarkDown**, un modo semplice di formattare il testo. Facciamo
+la data di fine in grassetto come esempio.
+Nella versione Telegram di Markdown, delimiteremo il testo che vogliamo in grassetto con degli asterischi,
+cosicché il messaggio dovrebbe apparire così:  
+>CodeDay ends \*in 2 months\*!  \
+Per implementare questo è piuttosto facile: tutto quello che dobbiamo fare è delimitare la data di fine con  
+degli asterischi e trasmettere il parametro “parse_mode” al Telegram API e impostarlo su “Markdown”,
+questo indicherà alla lib Telegram che vogliamo il testo come MarkDown.  
+Il codice modificato dovrebbe apparire in questo modo:
 
 
 
